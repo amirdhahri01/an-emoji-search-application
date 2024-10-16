@@ -1,0 +1,15 @@
+.search-input {
+  border-bottom: 1px solid #ccc;
+}
+.search-input > div {
+  margin: 0 10px 10px 10px;
+}
+.search-input > div input {
+  border: 1px solid #bbb;
+  border-bottom: 4px;
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 10px 8px;
+  width: 100%;
+  outline: none;
+}
