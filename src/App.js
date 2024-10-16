@@ -1,7 +1,16 @@
+import { PureComponent } from "react";
 import "./App.css";
-
-function App() {
-  return <></>;
+import EmojiResults from "./Dashboard/Emojis/EmojiResults";
+import Header from "./Dashboard/Header/Header";
+import SearchBar from "./Dashboard/Searchbar/SearchBar";
+class App extends PureComponent {
+  render() {
+    return (
+      <div>
+        <Header />
+      </div>
+    );
+  }
 }
 
 export default App;
