@@ -6,3 +6,23 @@
   font-family: Arial, Helvetica, sans-serif;
   cursor: pointer;
 }
+.component-emoji-result-row > .symbol {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+.component-emoji-result-row > .title {
+  position: relative;
+  top: 8px;
+}
+.component-emoji-result-row > .info {
+  float: right;
+  position: relative;
+  top: 8px;
+  right: 10px;
+  color: #ccc;
+  display: none;
+}
+.component-emoji-result-row:hover .info {
+  display: inline-block;
+}
