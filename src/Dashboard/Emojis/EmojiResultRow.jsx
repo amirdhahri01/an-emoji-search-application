@@ -1,14 +1,13 @@
 import { PureComponent } from "react";
 class EmojiResultRow extends PureComponent {
   render() {
-    const [title, symbol] = this.props;
-    // const codePointHex = symbol.codePointAt(0).toString(16);
+    const { title, symbol } = this.props;
     return (
       <>
         <div>
-          <img src="" alt={title} />
+          <span className="symbol">{symbol}</span>
           <span className="title">{title}</span>
-          <span className="info">Click to Copy {symbol}</span>
+          <span className="info">Click to Copy </span>
         </div>
       </>
     );

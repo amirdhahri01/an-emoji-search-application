@@ -3,7 +3,7 @@ import EmojiResultRow from "./EmojiResultRow";
 
 class EmojiResults extends PureComponent {
   render() {
-    const [emojiData] = this.props;
+    const { emojiData } = this.props;
     console.log(emojiData);
 
     return (
