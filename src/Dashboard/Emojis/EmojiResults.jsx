@@ -1,7 +1,25 @@
-import React from "react";
+import { PureComponent } from "react";
+import EmojiResultRow from "./EmojiResultRow";
 
-const EmojiResults = () => {
-  return <div>EmojiResults</div>;
-};
+class EmojiResults extends PureComponent {
+  render() {
+    const { emojiData } = this.props;
+    return (
+      <>
+        <div className="component-emoji-results">
+          {emojiData.map((emoji) => {
+            return (
+              <EmojiResultRow
+                key={emoji.title}
+                title={emoji.title}
+                symbol={emoji.symbol}
+              />
+            );
+          })}
+        </div>
+      </>
+    );
+  }
+}
 
 export default EmojiResults;
