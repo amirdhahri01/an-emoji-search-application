@@ -5,7 +5,10 @@ class EmojiResultRow extends PureComponent {
     const { title, symbol } = this.props;
     return (
       <>
-        <div className="component-emoji-result-row">
+        <div
+          className="component-emoji-result-row copy-it"
+          data-clipboard-text={symbol}
+        >
           <span className="symbol">{symbol}</span>
           <span className="title">{title}</span>
           <span className="info">Click to Copy </span>

@@ -1,11 +1,15 @@
 import { PureComponent } from "react";
 import EmojiResultRow from "./EmojiResultRow";
-
+import ClipboardJS from "clipboard";
 class EmojiResults extends PureComponent {
+  componentDidMount() {
+    this.clipboard = new ClipboardJS(".copy-it");
+  }
+  componentWillUnmount() {
+    this.clipboard.destroy();
+  }
   render() {
     const { emojiData } = this.props;
-    console.log(emojiData);
-
     return (
       <>
         <div className="component-emoji-results">

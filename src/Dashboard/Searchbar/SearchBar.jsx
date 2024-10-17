@@ -2,8 +2,10 @@ import { PureComponent } from "react";
 import "./SearchBar.css";
 
 class SearchBar extends PureComponent {
+  handleText = (e) => {
+    this.props.handleChange(e);
+  };
   render() {
-    const { handleChange } = this.props;
     return (
       <>
         <div className="search-input">
@@ -12,7 +14,7 @@ class SearchBar extends PureComponent {
               type="text"
               className="input-text"
               placeholder="Search Emoji"
-              onChange={handleChange}
+              onChange={this.handleText}
             />
           </div>
         </div>
