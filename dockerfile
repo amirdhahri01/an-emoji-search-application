@@ -1,18 +1,9 @@
-FROM node:current
-
+FROM node:14
 WORKDIR /app
-
-COPY package.json /app/
-
-COPY package-lock.json /app/
-
-RUN npm install 
-
-COPY src /app/
-
-COPY public /app/
-
-EXPOSE 3000
-
-CMD [ "npm" , "start" ]
-
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
+RUN npm install -g serve
+EXPOSE 5000
+CMD ["serve", "-s", "build", "-l", "5000"]
