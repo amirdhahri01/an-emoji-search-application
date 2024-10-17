@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3b215e53.css",
+    "main.js": "/static/js/main.fdf8a72c.js",
+    "static/media/smiling-cat-face-with-open-mouth.png": "/static/media/smiling-cat-face-with-open-mouth.c3113c13002dfe95fd1d.png",
+    "static/media/grinning-cat-face-with-smiling-eyes.png": "/static/media/grinning-cat-face-with-smiling-eyes.22d9f00197750223c27c.png",
+    "index.html": "/index.html",
+    "main.3b215e53.css.map": "/static/css/main.3b215e53.css.map",
+    "main.fdf8a72c.js.map": "/static/js/main.fdf8a72c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b215e53.css",
+    "static/js/main.fdf8a72c.js"
+  ]
+}
